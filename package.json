@@ -1,5 +1,5 @@
 {
-  "name": "lb-screen",
+  "name": "lb-screen-factory",
   "version": "1.0.0",
   "description": "A canvas factory funtion",
   "main": "lib/screenFactory.js",
