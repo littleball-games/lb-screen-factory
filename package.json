@@ -1,0 +1,24 @@
+{
+  "name": "lb-screen",
+  "version": "1.0.0",
+  "description": "A canvas factory funtion",
+  "main": "lib/screenFactory.js",
+  "scripts": {
+    "prebuild": "npm test",
+    "build": "rollup -c",
+    "pretest": "rollup -c rollup.test.js",
+    "test": "snyk test && standard src/*.js && node lib/screenFactory_spec.js",
+    "posttest": "rm lib/screenFactory_spec.js"
+  },
+  "author": "Matt Gale <matt@littleball.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "1.2.0",
+    "mock-browser": "0.92.12",
+    "rollup": "0.36.1",
+    "rollup-plugin-babel": "2.6.1",
+    "snyk": "1.19.1",
+    "standard": "8.3.0",
+    "tape": "4.6.2"
+  }
+}
